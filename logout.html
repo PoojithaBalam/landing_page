@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .logout-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #e74c3c;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="logout-container">
+    <h2>Logout</h2>
+    <p>You have successfully logged out.</p>
+
+    <button onclick="redirectToLogin()">Back to Login</button>
+</div>
+
+<script>
+    function redirectToLogin() {
+        // Assuming your login page is named "login.html"
+        window.location.href = "file:///C:/Users/pooji/OneDrive/Desktop/New%20folder/login.html";
+    }
+</script>
+
+</body>
+</html>

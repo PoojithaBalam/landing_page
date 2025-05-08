@@ -1,0 +1,299 @@
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Website</title>
+    <style>
+         body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  	  background: linear-gradient(to bottom, 
+    #ffe0bd, /* Light beige */
+    #ffd1a0  /* Slightly darker shade */
+  );
+  /* Additional styles for the body can be added here */
+
+
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: url('') center/cover no-repeat;
+    color: black;
+    padding: 1rem;
+    text-align: center;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Add a height to the header to make space for the navigation bar */
+    height: 20px; /* Adjust the value based on your header's height */
+}
+/* Adjust styles for nav-bar links */
+.nav-bar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+/* Adjust styles for nav-bar links on hover and active state */
+.nav-bar a:hover,
+.nav-bar a.active {
+    color: black;
+}
+
+/* Adjust styles for the name in the header */
+.name {
+    font-size: 22px;
+    font-weight: bold;
+    padding: 1px;
+    margin-top: -1px;
+    margin-right: 55px;
+}
+
+        .hero-section {
+    background: url('shop1.png') center/cover no-repeat;
+    color: black;
+    text-align: center;
+    padding: 22rem 0; /* Increase the padding to adjust the background image size */
+}
+
+.hero-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+     .product-container {
+ background: linear-gradient(to bottom, 
+    #ffdab9,           /* sand (Hex color for "peachpuff") */
+    rgba(255,255,255,0.8), /* glowing light white with some transparency */
+    #ffebcd,           /* neon skin glowing white (Hex color for "blanchedalmond") */
+    #ffd700             /* light yellow (Hex color) */
+  );
+  /* Additional styles for .product-container can be added here */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 1rem;
+    margin-top: 70px;
+}
+
+        .product-section {
+            background-color: #ffffff; /* White background color */
+            text-align: center;
+            margin-bottom: 2rem;
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 2rem;
+            border-radius: 10px;
+        }
+
+        .product-section h2 {
+            text-align: center;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .product-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            margin: 1rem;
+            padding: 1rem;
+            text-align: left;
+            width: 200px;
+            border-radius: 8px;
+        }
+
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;	
+            padding: 0.5rem 1rem;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .about-section {
+            background: linear-gradient(to bottom, #ffd700, #ffff00); /* Blue background color */
+            color: black;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .about-section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .contact-section {
+            background: grey; /* Red background color */
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .contact-section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+hr {
+  border: none; /* Remove the default border */
+  height: 1px; /* Set the height of the horizontal rule */
+  background-color: grey; /* Set the color of the horizontal rule */
+  margin: 20px 0; /* Set top and bottom margin */
+}
+
+    </style>
+</head>
+
+    <header>
+        <div class="nav-bar">
+            <a href="#hero-section" class="active">Home</a>
+            <a href="#section1" class="active">section1</a>
+	    <a href="#section2" class="active">section2</a>
+	    <a href="#section3" class="active">section3</a>
+	    <a href="#section4" class="active">section4</a>
+	    <a href="#section5" class="active">section5</a>
+            <a href="#about-section" class="active">About Us</a>
+            <a href="#contact-section" class="active">Contact</a>
+        </div>
+        <div class="name" class="active">
+          STYLE HEAVEN
+        </div>
+    </header>
+
+    <div class="hero-section" id="hero-section">
+        <h1>Welcome to Style Heaven</h1>
+        <p>Discover the latest trends in fashion</p>
+    </div><body><center>
+      <h1 style="color: black;font-size: 400%;">Categories</h1></center><hr>
+    <div class="product-container">
+        <div class="product-section" id="section1">
+            <h2>Category 1</h2>
+            <div class="product-card">
+                <img src="product1.jpg" alt="Product 1">
+                <p>$19.99</p>
+                <button onclick="addToCart(1)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="product1.jpg" alt="Product 1">
+                <p>$19.99</p>
+                <button onclick="addToCart(1)">Add to Cart</button>
+            </div>
+            <!-- Add more product cards for Category 1 as needed -->
+        </div>
+       
+        <div class="product-section" id="section2">
+            <h2>Category 2</h2>
+            <div class="product-card">
+                <img src="product1.jpg" alt="Product 1">
+                <p>$19.99</p>
+                <button onclick="addToCart(1)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="product1.jpg" alt="Product 1">
+                <p>$19.99</p>
+                <button onclick="addToCart(1)">Add to Cart</button>
+            </div>
+            <!-- Add more product cards for Category 2 as needed -->
+        </div>
+       
+        <div class="product-section" id="section3">
+            <h2>Category 3</h2>
+            <div class="product-card">
+                <img src="product1.jpg" alt="Product 1">
+                <p>$19.99</p>
+                <button onclick="addToCart(1)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="product1.jpg" alt="Product 1">
+                <p>$19.99</p>
+                <button onclick="addToCart(1)">Add to Cart</button>
+            </div>
+            <!-- Add more product cards for Category 3 as needed -->
+        </div>
+       
+        <div class="product-section" id="section4">
+            <h2>Category 4</h2>
+            <div class="product-card">
+                <img src="product1.jpg" alt="Product 1">
+                <p>$19.99</p>
+                <button onclick="addToCart(1)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="product1.jpg" alt="Product 1">
+                <p>$19.99</p>
+                <button onclick="addToCart(1)">Add to Cart</button>
+            </div>
+            <!-- Add more product cards for Category 4 as needed -->
+        </div>
+       
+        <div class="product-section" id="section5">
+            <h2>Category 5</h2>
+            <div class="product-card">
+                <img src="product1.jpg" alt="Product 1">
+                <p>$19.99</p>
+                <button onclick="addToCart(1)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="product1.jpg" alt="Product 1">
+                <p>$19.99</p>
+                <button onclick="addToCart(1)">Add to Cart</button>
+            </div>
+            <!-- Add more product cards for Category 5 as needed -->
+        </div>
+    </div>
+
+    <div class="about-section" id="about-section">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod nisi vitae congue mattis. Proin tristique metus nec congue aliquet.</p>
+    </div>
+
+    <div class="contact-section" id="contact-section">
+        <h2>Contact Us</h2>
+        <p>Have questions or feedback? Reach out to us!</p>
+        <p>Email: info@styleheaven.com</p>
+        <p>Phone:+19 98465285	</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Your Company. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Function to simulate adding a product to the cart
+        function addToCart(productId) {
+            alert(`Added Product ${productId} to the cart!`);
+        }
+
+    </script>
+</body>
+</html>
